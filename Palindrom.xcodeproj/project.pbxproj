@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		469A4B3426653DD000854663 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469A4B3326653DD000854663 /* AppDelegate.swift */; };
 		469A4B3626653DD000854663 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469A4B3526653DD000854663 /* SceneDelegate.swift */; };
-		469A4B3826653DD000854663 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469A4B3726653DD000854663 /* ViewController.swift */; };
-		469A4B3B26653DD000854663 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 469A4B3926653DD000854663 /* Main.storyboard */; };
+		469A4B3826653DD000854663 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469A4B3726653DD000854663 /* MainViewController.swift */; };
 		469A4B3D26653DD100854663 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 469A4B3C26653DD100854663 /* Assets.xcassets */; };
 		469A4B4026653DD100854663 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 469A4B3E26653DD100854663 /* LaunchScreen.storyboard */; };
+		D842217C8C6F335E2DDC5BB2 /* Pods_Palindrom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 999806066C1D523179F681EF /* Pods_Palindrom.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08034C18C09EF0685F7194F2 /* Pods-Palindrom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Palindrom.debug.xcconfig"; path = "Target Support Files/Pods-Palindrom/Pods-Palindrom.debug.xcconfig"; sourceTree = "<group>"; };
 		469A4B3026653DD000854663 /* Palindrom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Palindrom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		469A4B3326653DD000854663 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		469A4B3526653DD000854663 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		469A4B3726653DD000854663 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		469A4B3A26653DD000854663 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		469A4B3726653DD000854663 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		469A4B3C26653DD100854663 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		469A4B3F26653DD100854663 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		469A4B4126653DD100854663 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76E25587C90F9A566E1EA8DA /* Pods-Palindrom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Palindrom.release.xcconfig"; path = "Target Support Files/Pods-Palindrom/Pods-Palindrom.release.xcconfig"; sourceTree = "<group>"; };
+		999806066C1D523179F681EF /* Pods_Palindrom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Palindrom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D842217C8C6F335E2DDC5BB2 /* Pods_Palindrom.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02F8BB26F371DD6F9FA0E47A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				999806066C1D523179F681EF /* Pods_Palindrom.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		469A4B2726653DD000854663 = {
 			isa = PBXGroup;
 			children = (
 				469A4B3226653DD000854663 /* Palindrom */,
 				469A4B3126653DD000854663 /* Products */,
+				573A626F307037436EA44011 /* Pods */,
+				02F8BB26F371DD6F9FA0E47A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +71,22 @@
 			children = (
 				469A4B3326653DD000854663 /* AppDelegate.swift */,
 				469A4B3526653DD000854663 /* SceneDelegate.swift */,
-				469A4B3726653DD000854663 /* ViewController.swift */,
-				469A4B3926653DD000854663 /* Main.storyboard */,
+				469A4B3726653DD000854663 /* MainViewController.swift */,
 				469A4B3C26653DD100854663 /* Assets.xcassets */,
 				469A4B3E26653DD100854663 /* LaunchScreen.storyboard */,
 				469A4B4126653DD100854663 /* Info.plist */,
 			);
 			path = Palindrom;
+			sourceTree = "<group>";
+		};
+		573A626F307037436EA44011 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				08034C18C09EF0685F7194F2 /* Pods-Palindrom.debug.xcconfig */,
+				76E25587C90F9A566E1EA8DA /* Pods-Palindrom.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 469A4B4426653DD100854663 /* Build configuration list for PBXNativeTarget "Palindrom" */;
 			buildPhases = (
+				FDD30A11B92710DFD75BCEA7 /* [CP] Check Pods Manifest.lock */,
 				469A4B2C26653DD000854663 /* Sources */,
 				469A4B2D26653DD000854663 /* Frameworks */,
 				469A4B2E26653DD000854663 /* Resources */,
+				6C2285C1E548E492FF52D73A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,18 +150,59 @@
 			files = (
 				469A4B4026653DD100854663 /* LaunchScreen.storyboard in Resources */,
 				469A4B3D26653DD100854663 /* Assets.xcassets in Resources */,
-				469A4B3B26653DD000854663 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6C2285C1E548E492FF52D73A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Palindrom/Pods-Palindrom-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Palindrom/Pods-Palindrom-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Palindrom/Pods-Palindrom-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDD30A11B92710DFD75BCEA7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Palindrom-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		469A4B2C26653DD000854663 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				469A4B3826653DD000854663 /* ViewController.swift in Sources */,
+				469A4B3826653DD000854663 /* MainViewController.swift in Sources */,
 				469A4B3426653DD000854663 /* AppDelegate.swift in Sources */,
 				469A4B3626653DD000854663 /* SceneDelegate.swift in Sources */,
 			);
@@ -146,14 +211,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		469A4B3926653DD000854663 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				469A4B3A26653DD000854663 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		469A4B3E26653DD100854663 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -283,6 +340,7 @@
 		};
 		469A4B4526653DD100854663 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08034C18C09EF0685F7194F2 /* Pods-Palindrom.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +360,7 @@
 		};
 		469A4B4626653DD100854663 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76E25587C90F9A566E1EA8DA /* Pods-Palindrom.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
