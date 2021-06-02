@@ -32,7 +32,7 @@ final class MainViewController: UIViewController {
         button.setTitle("Search", for: .normal)
         button.setTitleColor(.white, for: .normal)
         button.layer.cornerRadius = 25
-        button.addTarget(self, action: #selector(searchPalindrome), for: .touchUpInside)
+        button.addTarget(self, action: #selector(longestPalindrome), for: .touchUpInside)
         return button
     }()
     
@@ -58,17 +58,25 @@ final class MainViewController: UIViewController {
 
     //MARK: - Methods
     
-    @objc func searchPalindrome() {
-        if inputTextView.text != nil && inputTextView.text != "Input text here" {
-            outputTextView.isHidden = false
-            let input = inputTextView.text.lowercased().replacingOccurrences(of: " ", with: "")
-            
-            if String(input.reversed()) == input {
-                outputTextView.text = "This is palindrome"
-            } else {
-                outputTextView.text = "This isn't palindrome"
+    @objc func longestPalindrome()  {
+        outputTextView.isHidden = false
+        var maxLengh = 0
+        var maxPalindrome = ""
+        let input = inputTextView.text.lowercased().replacingOccurrences(of: " ", with: "")
+        for i in input.indices {
+            var end = input.index(after: i)
+            while end != input.endIndex {
+                let word = input[i...end]
+                if word == String(word.reversed())  {
+                    if word.count > maxLengh {
+                        maxLengh = word.count
+                        maxPalindrome = String(word)
+                    }
+                }
+                end = input.index(after: end)
             }
         }
+        outputTextView.text = maxPalindrome
     }
     
     //MARK: - Layout
