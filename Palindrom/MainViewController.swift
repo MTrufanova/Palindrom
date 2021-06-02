@@ -76,7 +76,7 @@ final class MainViewController: UIViewController {
                 end = input.index(after: end)
             }
         }
-        outputTextView.text = maxPalindrome
+        outputTextView.text = maxPalindrome + " (" + String(maxLengh) + " symbols)"
     }
     
     //MARK: - Layout
